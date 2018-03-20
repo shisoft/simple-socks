@@ -33,8 +33,8 @@ server.on('proxyError', function (err) {
 });
 
 // When a proxy connection ends
-server.on('proxyEnd', function (response, args) {
-	console.log('socket closed with code %d', response);
+server.on('proxyEnd', function (user, socket) {
+	console.log('socket closed with user %s code %d', user);
 	console.log(args);
 	console.log();
 });
