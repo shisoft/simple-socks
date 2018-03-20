@@ -9,3 +9,6 @@ reports
 *.esproj
 *.esproj?
 *.csr
+
+.idea/
+simple-socks.iml
